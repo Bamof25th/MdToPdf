@@ -134,7 +134,7 @@ export async function generatePDF({
       windowWidth: scrollWidth,
       windowHeight: scrollHeight,
       imageTimeout: 15000, // Wait up to 15 seconds for images
-      onclone: (clonedDoc, element) => {
+      onclone: (clonedDoc) => {
         // Callback to modify the cloned document before capture
         // This ensures all content is visible and properly styled
 

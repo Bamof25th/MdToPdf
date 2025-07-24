@@ -2,6 +2,7 @@
 
 // React imports for component state and DOM references
 import { useState, useRef } from "react";
+import Image from "next/image";
 
 // Custom component imports
 import FileUpload from "@/components/FileUpload";
@@ -240,10 +241,13 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-30 blur-sm animate-spin-slow -z-10"></div>
 
                 {/* PNG Logo */}
-                <img
+                <Image
                   src="/logo.png"
                   alt="Markdown to PDF Converter"
-                  className="w-12 h-12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-500 group-hover:scale-110 z-10 drop-shadow-lg"
+                  width={48}
+                  height={48}
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-500 group-hover:scale-110 z-10 drop-shadow-lg"
+                  priority
                 />
               </div>
 

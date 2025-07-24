@@ -347,13 +347,10 @@ export async function simpleGeneratePDF(
 
     // Calculate how the image should fit
     const imgAspectRatio = canvas.width / canvas.height;
-    const pageAspectRatio = contentWidth / contentHeight;
-
-    let imgWidth, imgHeight;
 
     // Fit image to page width
-    imgWidth = contentWidth;
-    imgHeight = imgWidth / imgAspectRatio;
+    const imgWidth = contentWidth;
+    const imgHeight = imgWidth / imgAspectRatio;
 
     console.log("PDF dimensions:", {
       pageWidth,
