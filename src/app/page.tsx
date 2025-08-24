@@ -464,7 +464,7 @@ export default function Home() {
               <div className="flex flex-wrap items-center justify-center gap-4">
                 {/* GitHub Repository Button */}
                 <a
-                  href="https://github.com/yourusername/MdToPdf"
+                  href="https://github.com/bamof25th/MdToPdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
